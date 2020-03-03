@@ -1,0 +1,137 @@
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width; initial-scale=1.0;">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="cssjs/fullpage.css" />
+    <link rel="stylesheet" type="text/css" href="cssjs/main.css" />
+    <link rel="stylesheet" type="text/css" href="cssjs/swiper.min.css">
+    <link rel='stylesheet' media='screen and (max-width: 768px)' href='cssjs/mobile.css' />
+    <title>Portfolio International Ian Robeerst</title>
+</head>
+
+<body>
+    <ul id="menu">
+        <li data-menuanchor="secondPage"><a href="#secondPage">Me</a></li>
+        <li data-menuanchor="3rdPage"><a href="#3rdPage">Work</a></li>
+        <li data-menuanchor="4thPage"><a href="#4thPage">Contact</a></li>
+    </ul>
+
+    <div id="fullpage">
+        <div class="section" id="landing">
+            <div class="intro">
+                <div class="logo_landing">
+                    <img class="logo_ijslap" src="img/IJSLAP_LOGO.png">
+                    <img class="logo_ijslap_GR" src="img/IJSLAP_LOGO_GR.png">
+                </div>
+                <a href="#secondPage">
+                    <img class="arrow" src="img/arrow.gif">
+                </a>
+            </div>
+        </div>
+        <div class="section" id="me">
+            <div class="workcontent">
+                <p class="about"> Hi, my name is Ian Robeerst and I'm 18 years old. I’m a second year student at Fontys University in
+                    Eindhoven, The Netherlands, where I study <a href="https://fontys.nl/hbo-ict-media-design/" target="_blank">
+                        ICT&Media design</a>
+                    and <a
+                        href="https://fontys.edu/Exchange-programmes-5/Specialisations-ICT-Game-Design-and-Technology.htm"
+                        target="_blank">
+                        Game design & technology</a>.
+                    <br> </br>
+                    My talents lie in rapid prototyping, so I can let the user test a lot of my work. <br>I also enjoy
+                    filming and editing all sorts of things.
+                    <br> And last but not least, I have a creative mindset, which can lead to really fun projects.
+                    <br> </br>
+                    My goal in the next couple of years are to broaden my creative mindset, <br>so that I don’t use the
+                    same mindset all the time.
+                    <br> </br>
+                    I hope I can make more and creative projects that I'm passionate about.
+                </p>
+                <div class="foto">
+                    <img class="portret" src="img/Portret.png">
+                </div>
+            </div>
+        </div>
+        <div class="section" id="work">
+            <div class="workcontent">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><a href="https://youtu.be/uyGk-CUb2ew" target="_blank"><img
+                                    class="myWork" src="img/myWork/easyguitar.png"></a></div>
+                        <div class="swiper-slide"><a href="https://youtu.be/OUyiJup4g94" target="_blank"><img
+                                    class="myWork" src="img/myWork/pt.png"></a></div>
+                        <div class="swiper-slide"><a href="https://youtu.be/UXjsL12hxHc" target="_blank"><img
+                                    class="myWork" src="img/myWork/qube.png"></a></div>
+                        <div class="swiper-slide"><a href="https://youtu.be/wTtH3Uk_hyk" target="_blank"><img
+                                    class="myWork" src="img/myWork/pytron.png"></a></div>
+                        <div class="swiper-slide"><a href="img/Presentation.pdf" target="_blank"><img class="myWork"
+                                    src="img/myWork/democracy.png"></a></div>
+                        <div class="swiper-slide"><a href="https://youtu.be/5gCueYU95V0" target="_blank"><img
+                                    class="myWork" src="img/myWork/dcGame.png"></a></div>
+                        <div class="swiper-slide"><a href="https://youtu.be/_zCGonJu_PQ" target="_blank"><img
+                                    class="myWork" src="img/myWork/tetris.png"></a></div>
+                        <div class="swiper-slide"><a href="http://i403782.hera.fhict.nl/indexS2.html"
+                                target="_blank"><img class="myWork" src="img/myWork/other.png"></a></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="contact">
+            <div class="grid-container3">
+                <div class="contacttitle">
+                    <p class="contacttit">Contact</p>
+                </div>
+                <div class="contactinfo">
+                    <p class="contactin">
+                        Email 1 | ijslapproducties@gmail.com<br>
+                        Email 2 | ijslapje@gmail.com<br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="cssjs/fullpage.js"></script>
+    <script type="text/javascript" src="cssjs/examples.js"></script>
+    <script type="text/javascript" src="cssjs/swiper.min.js"></script>
+    <script type="text/javascript">
+        var myFullpage = new fullpage('#fullpage', {
+            anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage'],
+            navigation: true,
+            showActiveTooltip: true,
+            menu: '#menu',
+            verticalCentered: false,
+            css3: false,
+        });
+
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            // init: false,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 40,
+                },
+                1024: {
+                    slidesPerView: 4,
+                    spaceBetween: 50,
+                },
+            }
+        });
+    </script>
+</body>
+
+</html>
