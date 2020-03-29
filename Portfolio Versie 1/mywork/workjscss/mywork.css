@@ -1,0 +1,18 @@
+.container {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 0.5fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "outsideL content outsideR";
+  }
+  
+.content { 
+    grid-area: content; 
+}
+  
+.outsideL { 
+    grid-area: outsideL; 
+}
+  
+.outsideR { 
+    grid-area: outsideR; 
+}

@@ -1,3 +1,5 @@
+<!--Alles moet in JS!!!! ALS HET JS IS!!! (DOM)-->
+
 <html lang="en">
 
 <head>
@@ -59,22 +61,16 @@
             <div class="workcontent">
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide"><a href="https://youtu.be/uyGk-CUb2ew" target="_blank"><img
-                                    class="myWork" src="img/myWork/easyguitar.png"></a></div>
-                        <div class="swiper-slide"><a href="https://youtu.be/OUyiJup4g94" target="_blank"><img
-                                    class="myWork" src="img/myWork/pt.png"></a></div>
-                        <div class="swiper-slide"><a href="https://youtu.be/UXjsL12hxHc" target="_blank"><img
+                        <div class="swiper-slide"><a href="mywork/qube.html"><img
                                     class="myWork" src="img/myWork/qube.png"></a></div>
-                        <div class="swiper-slide"><a href="https://youtu.be/wTtH3Uk_hyk" target="_blank"><img
+                        <div class="swiper-slide"><a href="https://youtu.be/wTtH3Uk_hyk"><img
                                     class="myWork" src="img/myWork/pytron.png"></a></div>
-                        <div class="swiper-slide"><a href="img/Presentation.pdf" target="_blank"><img class="myWork"
+                        <div class="swiper-slide"><a href="img/Presentation.pdf"><img class="myWork"
                                     src="img/myWork/democracy.png"></a></div>
-                        <div class="swiper-slide"><a href="https://youtu.be/5gCueYU95V0" target="_blank"><img
-                                    class="myWork" src="img/myWork/dcGame.png"></a></div>
-                        <div class="swiper-slide"><a href="https://youtu.be/_zCGonJu_PQ" target="_blank"><img
+                        <div class="swiper-slide"><a href="https://youtu.be/_zCGonJu_PQ"><img
                                     class="myWork" src="img/myWork/tetris.png"></a></div>
                         <div class="swiper-slide"><a href="http://i403782.hera.fhict.nl/indexS2.html"
-                                target="_blank"><img class="myWork" src="img/myWork/other.png"></a></div>
+                                ><img class="myWork" src="img/myWork/other.png"></a></div>
                     </div>
                     <div class="swiper-pagination"></div>
                 </div>
@@ -95,43 +91,7 @@
         </div>
     </div>
 
-    <script type="text/javascript" src="cssjs/fullpage.js"></script>
-    <script type="text/javascript" src="cssjs/examples.js"></script>
     <script type="text/javascript" src="cssjs/swiper.min.js"></script>
-    <script type="text/javascript">
-        var myFullpage = new fullpage('#fullpage', {
-            anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage'],
-            navigation: true,
-            showActiveTooltip: true,
-            menu: '#menu',
-            verticalCentered: false,
-            css3: false,
-        });
-
-        var swiper = new Swiper('.swiper-container', {
-            slidesPerView: 1,
-            spaceBetween: 10,
-            // init: false,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            breakpoints: {
-                640: {
-                    slidesPerView: 2,
-                    spaceBetween: 20,
-                },
-                768: {
-                    slidesPerView: 3,
-                    spaceBetween: 40,
-                },
-                1024: {
-                    slidesPerView: 4,
-                    spaceBetween: 50,
-                },
-            }
-        });
-    </script>
 </body>
 
 </html>
