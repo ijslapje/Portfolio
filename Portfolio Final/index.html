@@ -9,10 +9,16 @@
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="cssjs/mainstyle.css" />
     <script src="cssjs/mainjs.js"></script>
+
+    <!--Swiper css-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <!--End Swiper css-->
+
 </head>
 
 <body>
-    <div id="landing" class="landing">
+    <div id="landing">
         <div class="title">
             <h1>Ian Robeerst</h1>
             <h2>Student Media Design & ICT</h2>
@@ -24,18 +30,39 @@
         </div>
     </div>
 
-    <div id="about" class="about">
+    <div id="about">
         <h1>About</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, eveniet facilis a eaque hic quia alias ea fugiat laudantium corrupti ex tenetur laborum earum et eos voluptatum! Nam, ullam. Minima!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, eveniet facilis a eaque hic quia alias ea
+            fugiat laudantium corrupti ex tenetur laborum earum et eos voluptatum! Nam, ullam. Minima!</p>
     </div>
 
-    <div id="work" class="work">
+    <div id="work">
         <h1>Portfolio</h1>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><a href="mywork/qube.html"><img
+                    class="myWork" src="img/myWork/qube.png"></a></div>
+        <div class="swiper-slide"><a href="https://youtu.be/wTtH3Uk_hyk"><img
+                    class="myWork" src="img/myWork/pytron.png"></a></div>
+        <div class="swiper-slide"><a href="img/Presentation.pdf"><img class="myWork"
+                    src="img/myWork/democracy.png"></a></div>
+        <div class="swiper-slide"><a href="https://youtu.be/_zCGonJu_PQ"><img
+                    class="myWork" src="img/myWork/tetris.png"></a></div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
     </div>
 
-    <div id="contact" class="contact">
+    <div id="contact">
         <h1>Contact</h1>
+        <p>ianrobeerst@gmail.com</p>
     </div>
+
+    <!--Swiper js (nog fixen dat ze in de head kunnen)-->
+    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <!--End Swiper js-->
 </body>
 
 </html>

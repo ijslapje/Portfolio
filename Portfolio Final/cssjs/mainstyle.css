@@ -1,7 +1,30 @@
 body{
     margin: 0;
     font-family: 'Noto Sans', sans-serif;
-    color: #000;
+    color: white;
+    background-color: black;
+}
+
+body::-webkit-scrollbar-track
+{
+    border: 1px solid black;
+    background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar
+{
+    width: 10px;
+    background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar-thumb
+{
+    background-color: #000000;  
+}
+
+h1{
+    font-weight: bold;
+    font-size: 6rem;
 }
 
 #landing{
@@ -16,19 +39,25 @@ body{
 
 .title{
     text-align: center;
-    color: white;
     z-index: 1;
 }
 
-.landing h1{
+#landing h1{
     font-size: 7rem;
     padding: 0;
     margin: 0;
 }
-.landing h2{
+
+#landing h2{
     font-size: 2rem;
     padding: 0;
     margin: 0;
+}
+
+video{
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
 }
 
 .videocontainer{
@@ -37,6 +66,7 @@ body{
     top: 0;
     left: 0;
     z-index: -1;
+
 }
 
 #about{
@@ -45,9 +75,12 @@ body{
     text-align: center;
 }
 
-.about p{
+#about p{
+    font-size: 3rem;
     word-wrap: break-word;
-    width: 600px;
+    width: 70vh;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #work{ 
@@ -56,8 +89,41 @@ body{
     text-align: center;
 }
 
+.swiper-container{
+    width: 100%;
+    
+}
+
+.swiper-slide {
+    text-align: center;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.myWork{
+    max-width: 20rem;
+}
+
+
 #contact{ 
     width: 100%;
     height: 100vh;
     text-align: center;
+}
+
+#contact p{
+    font-weight: bold;
+    font-size: 5rem;
+    margin-top: 15%;
 }
