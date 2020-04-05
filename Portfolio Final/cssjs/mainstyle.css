@@ -27,6 +27,14 @@ body::-webkit-scrollbar-thumb
     flex-direction: column;
 }
 
+.circle {
+	position: absolute;
+  border: solid 1px #ccc;
+	width: 60px; 
+	height: 60px; 
+  border-radius: 50%;  
+}
+
 h1{
     margin: 0;
     padding: 0;
