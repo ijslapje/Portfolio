@@ -27,19 +27,11 @@ body::-webkit-scrollbar-thumb
     flex-direction: column;
 }
 
-.circle {
-	position: absolute;
-  border: solid 1px #ccc;
-	width: 60px; 
-	height: 60px; 
-  border-radius: 50%;  
-}
-
 h1{
     margin: 0;
     padding: 0;
     font-weight: bold;
-    font-size: 6vw;
+    font-size: 4vw;
 }
 
 #landing{
@@ -84,68 +76,64 @@ video{
     z-index: -1;
 }
 
-#about{
-    order: 2; 
+.restpage{
+    order: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1px 1px;
+    grid-template-areas: "about work" "contact work";
     padding: 7vw 0;
     width: 100%;
-    height: 100vh;
-    text-align: center;
-    
+    height: 75vh;
+}
+
+#about{
+    grid-area: about;
+    text-align: center;  
 }
 
 #about p{
-    font-size: 2.9vw;
+    font-size: 2vw;
     word-wrap: break-word;
-    width: 100%;
-    max-width: 80vh;
+    max-width: 40vw;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 100px;
 }
 
 #work{ 
-    order: 3; 
-    width: 100%;
-    height: 100vh;
+    grid-area: work;
     text-align: center;
+}
+
+.swipe{
+    max-width: 50vw;
 }
 
 .swiper-container{
-    width: 100%;
-    
+    margin: 0;
 }
 
 .swiper-slide {
-    text-align: center;
-    /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
+    background-position: center;
+    background-size: cover;
 }
 
 .myWork{
     max-width: 20vw;
+    
 }
 
 
 #contact{ 
-    order: 4; 
-    width: 100%;
-    height: 80vh;
+    grid-area: contact;
     text-align: center;
 }
 
 #contact p{
     font-weight: bold;
-    font-size: 5vw;
+    font-size: 2vw;
 }
 
 @media only screen and (max-width: 600px) {
