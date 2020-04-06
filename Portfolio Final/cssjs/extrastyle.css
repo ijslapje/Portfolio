@@ -34,12 +34,12 @@ body{
     height: 100vh;
 }
 
-.img1 { 
+.img1{ 
     grid-area: img1; 
     align-self: center;
 }
 
-.img2 { 
+.img2{ 
     grid-area: img2; 
 }
 
@@ -48,10 +48,22 @@ img{
     width: 500px;
 }
 
-.text { 
+.text{ 
     grid-area: text;
     max-width: 85%;
     justify-self: center;
+    text-align: left;
+}
+
+h1{
+    font-size: 2vw;
+    padding: 0;
+}
+
+h2{
+    font-size: 1vw;
+    margin: 0;
+    padding: 0;
 }
 
 a{
