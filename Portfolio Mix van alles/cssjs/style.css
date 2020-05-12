@@ -86,6 +86,12 @@ h1 {
   z-index: 1;
 }
 
+.landing{
+  background-size: cover;
+  background-position: 50% 50%;
+  text-align: center;
+}
+
 .landing h1 {
   font-size: 5vw;
   padding: 0;
@@ -113,12 +119,9 @@ video {
 }
 
 .intro {
-  color: white;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: 50% 50%;
-  text-align: center;
+  background-color: black;
 }
+
 
 a:link,
 a:visited {
@@ -183,6 +186,7 @@ a:visited {
 
 #contact{
   text-align: left;
+  background-color: rgb(36, 36, 36);
 }
 
 .contacttit {
