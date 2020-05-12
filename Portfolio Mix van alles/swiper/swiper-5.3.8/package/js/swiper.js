@@ -5956,7 +5956,7 @@
         swiper.scrollbar.timeout = setTimeout(function () {
           $el[0].style.opacity = 0;
           $el.transition(400);
-        }, 1000);
+        }, 100);
       }
     },
     setTransition: function setTransition(duration) {

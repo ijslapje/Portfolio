@@ -1,82 +1,78 @@
 html,
 body {
   position: relative;
-  height: 100vh;
   margin: 0;
   padding: 0;
+  overflow: hidden;
 }
+
 body {
   background: rgb(0, 0, 0);
   font-family: "Arial Black", Gadget, sans-serif;
   font-size: 14px;
-
 }
-.swiper-container {
-  width: 100%;
-  height: 100%;
+
+.main-container {
   margin-left: auto;
   margin-right: auto;
+  overflow-y: scroll;
+  height: 100vh;
+  scroll-snap-type: y mandatory;
 }
-.swiper-slide {
+
+.page {
   text-align: center;
   color: #fff;
   /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
   align-items: center;
   padding: 0;
   margin: 0;
+  min-height: 100vh;
+  scroll-snap-align: start;
 }
 
 .swiper-pagination-bullet-active {
   background-color: rgb(255, 0, 0);
 }
+
 #menu {
-    position: fixed;
-    word-spacing: 0.2em;
-    top: 0;
-    z-index: 70;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    text-align: center;
-    mix-blend-mode: exclusion;
-    font-size: 3vh;
-  }
-  
-  #menu li {
-    display: inline-block;
-    margin: 10px 30px;
-  }
-  
-  #menu li.active {
-    text-decoration: underline;
-  }
-  #menu li a {
-    text-decoration: none;
-    font-size: 3vh;
-  }
-  
-  #menu li:hover {
-    text-decoration: underline;
-  }
-  
-  #menu li a,
-  #menu li.active a {
-    padding: 9px 30px;
-    display: block;
-    color: white;
-  }
-  
+  position: fixed;
+  word-spacing: 0.2em;
+  top: 0;
+  z-index: 70;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  mix-blend-mode: exclusion;
+  font-size: 3vh;
+}
+
+#menu li {
+  display: inline-block;
+  margin: 10px 30px;
+}
+
+#menu li.active {
+  text-decoration: underline;
+}
+#menu li a {
+  text-decoration: none;
+  font-size: 3vh;
+}
+
+#menu li:hover {
+  text-decoration: underline;
+}
+
+#menu li a,
+#menu li.active a {
+  padding: 9px 30px;
+  display: block;
+  color: white;
+}
 
 h1 {
   margin: 0;
@@ -117,35 +113,31 @@ video {
 }
 
 .intro {
-    height: 100%;
-    color: white;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: 50% 50%;
-    text-align: center;
-  }
+  color: white;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 50% 50%;
+  text-align: center;
+}
 
-  
-  a:link,
-  a:visited {
-    color: #d8124d;
-    text-decoration: underline;
-  }
-  
-  .about {
-    font-size: 2vh;
-    text-align: justify;
-    text-justify: inter-word;
-    padding: 5% 6% 5% 6%;
-  }
+a:link,
+a:visited {
+  color: #d8124d;
+  text-decoration: underline;
+}
 
-  .portfolio{
-    background-color: #1a1a1d;
-  }
+.about {
+  font-size: 2vh;
+  text-align: justify;
+  text-justify: inter-word;
+  padding: 5% 6% 5% 6%;
+}
+
+.portfolio {
+  background-color: #1a1a1d;
+}
 
 .workcontent {
-  width: 100%;
-  height: 100%;
   padding: 0;
   margin: 0;
   display: flex;
@@ -173,53 +165,32 @@ video {
   transform: scaleX(-1);
 }
 
+.swiper-container{
+  background-color: rgba(54, 54, 54, 0.438);
+}
+
 .myWork {
-    margin: 0;
-    padding: 0;
-    max-width: 25vh;
-    transition: all .2s ease-in-out;
-}
-  
-.myWork:hover{
-    cursor: pointer;
-    transform: scale(1.2) perspective(1vh);
+  margin: 0;
+  padding: 0;
+  max-width: 25vh;
+  transition: all 0.2s ease-in-out;
 }
 
-.swiper-container2 {
-    width: 100%;
-    height: 100%;
+.myWork:hover {
+  cursor: pointer;
+  transform: scale(1.2) perspective(1vh);
 }
 
-.grid-container3 {
-    margin: 0;
-    padding: 20%;
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-  }
+#contact{
+  text-align: left;
+}
 
-  .contacttit {
-    color: #c3073f;
-    font-size: 4vh;
-    text-align: left;
-  }
-  
-  .contactin {
-    color: #c2155a;
-    font-size: 2vh;
-    text-align: left;
-  }
-  
-  .contactinfo {
-    grid-area: contactinfo;
-  }
-  
-  .contacttitle {
-    grid-area: contacttitle;
-  }
-  
+.contacttit {
+  color: #c3073f;
+  font-size: 4vh;
+}
 
-
-
+.contactin {
+  color: #c2155a;
+  font-size: 2vh;
+}

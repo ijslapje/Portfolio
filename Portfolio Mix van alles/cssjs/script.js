@@ -1,23 +1,21 @@
 window.onload = function () {
-    var swiper = new Swiper('.swiper-container', {
+    /*var swiper = new Swiper('.swiper-container', {
         direction: 'vertical',
         slidesPerView: 1,
         spaceBetween: 30,
+        scrollbar: {
+          el: '.swiper-scrollbar',
+        },
         mousewheel: true,
-        speed: 400,
-        forceToAxis: true,
+    });*/
+
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 4,
+        spaceBetween: 30,
+        centeredSlides: true,
         pagination: {
           el: '.swiper-pagination',
           clickable: true,
-        },
-    });
-
-    var swiper2 = new Swiper('.swiper-container2', {
-        slidesPerView: 1,
-        spaceBetween: 10,
-        // init: false,
-        pagination: {
-            clickable: true,
         },
         breakpoints: {
             640: {
@@ -33,5 +31,5 @@ window.onload = function () {
                 spaceBetween: 50,
             },
         }
-    });
+      });
 }
