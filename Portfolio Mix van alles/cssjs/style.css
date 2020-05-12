@@ -169,13 +169,19 @@ a:visited {
 }
 
 .swiper-container{
-  background-color: rgba(54, 54, 54, 0.438);
+  width: 40vh;
+  height: 40vh;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
 }
 
 .myWork {
   margin: 0;
   padding: 0;
-  max-width: 25vh;
+  max-width: 30vh;
   transition: all 0.2s ease-in-out;
 }
 
