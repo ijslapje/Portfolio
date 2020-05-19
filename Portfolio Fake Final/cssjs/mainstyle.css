@@ -1,0 +1,141 @@
+body{
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+    color: white;
+    background-color: black;
+}
+
+body::-webkit-scrollbar-track
+{
+    border: 1px solid black;
+    background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar
+{
+    width: 10px;
+    background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar-thumb
+{
+    background-color: #000000;  
+}
+
+.maincontainer{
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-size: 4vw;
+}
+
+#landing{
+    order: 1; 
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.title{
+    text-align: center;
+    z-index: 1;
+}
+
+#landing h1{
+    font-size: 7vw;
+    padding: 0;
+    margin: 0;
+}
+
+#landing h2{
+    font-size: 2vw;
+    padding: 0;
+    margin: 0;
+}
+
+video{
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+.videocontainer{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.restpage{
+    order: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1px 1px;
+    grid-template-areas: "about work" "contact work";
+    padding: 7vw 0;
+    width: 100%;
+    height: 75vh;
+}
+
+#about{
+    grid-area: about;
+    text-align: center;  
+}
+
+#about p{
+    font-size: 2vw;
+    word-wrap: break-word;
+    max-width: 40vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+}
+
+#work{ 
+    grid-area: work;
+    text-align: center;
+}
+
+.swipe{
+    max-width: 50vw;
+}
+
+.swiper-container{
+    margin: 0;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+}
+
+.myWork{
+    max-width: 20vw;
+    
+}
+
+
+#contact{ 
+    grid-area: contact;
+    text-align: center;
+}
+
+#contact p{
+    font-weight: bold;
+    font-size: 2vw;
+}
+
+@media only screen and (max-width: 600px) {
+    
+  }
