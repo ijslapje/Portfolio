@@ -97,6 +97,10 @@ body {
   color: #c2155a;
 }
 
+.text span{
+  color: #c2155a;
+}
+
 .fotodiv{
   max-width: 68%;
 }
